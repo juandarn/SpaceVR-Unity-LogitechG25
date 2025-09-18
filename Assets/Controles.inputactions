@@ -1,0 +1,197 @@
+{
+    "name": "Controles",
+    "maps": [
+        {
+            "name": "Wheel",
+            "id": "41913963-8832-4059-aa74-7a8e43c1e062",
+            "actions": [
+                {
+                    "name": "Direccion",
+                    "type": "Value",
+                    "id": "600cf519-f6f3-4b55-9a58-63200839c03b",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Acelerador",
+                    "type": "Value",
+                    "id": "d0d03e81-2295-4535-8807-34942e53b09f",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Freno",
+                    "type": "Button",
+                    "id": "40153fac-6d4a-4bc9-9bbd-f5bb7d546bc7",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Embrague",
+                    "type": "Value",
+                    "id": "fdf41f65-ce4f-44b3-9bfe-11177dc6201a",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Marcha 1",
+                    "type": "Button",
+                    "id": "ae785bfc-0775-4d39-9d40-dd6fa2b5c5cb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Marcha 2",
+                    "type": "Button",
+                    "id": "f26c2509-099c-45a1-8dc3-259ce29c8d93",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Disparar",
+                    "type": "Button",
+                    "id": "188d559e-d2f8-48ab-80f1-2a49ab937114",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Disparar 2",
+                    "type": "Button",
+                    "id": "36dde45c-3f75-42b8-bcea-c92fe3c1b945",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "56fef8e7-bc63-4159-9b80-29518778b76a",
+                    "path": "<HID::G25 Racing Wheel>/stick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Auto",
+                    "action": "Direccion",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "778aa74e-78a1-433d-805e-33d4b6f8d6c8",
+                    "path": "<HID::G25 Racing Wheel>/stick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Acelerador",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "82840f51-197a-482f-b945-6581b0f16eb7",
+                    "path": "<HID::G25 Racing Wheel>/stick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Freno",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2fd016fb-2738-490e-a956-313f24ba74c4",
+                    "path": "<HID::G25 Racing Wheel>/button12",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Marcha 1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8d794ef5-1fbf-40be-b4cc-070e4cceedea",
+                    "path": "<HID::G25 Racing Wheel>/button11",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Marcha 2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bca01989-3578-48a5-ba58-36886ec919c7",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Embrague",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b537b805-db5a-47bf-aece-86a1c074e06c",
+                    "path": "<HID::G25 Racing Wheel>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Disparar",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6aaa0a36-6d04-4858-9f83-b2e66171d929",
+                    "path": "<HID::G25 Racing Wheel>/button6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Disparar 2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Auto",
+            "bindingGroup": "Auto",
+            "devices": [
+                {
+                    "devicePath": "<HID::G25 Racing Wheel>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        },
+        {
+            "name": "Auto1",
+            "bindingGroup": "Auto1",
+            "devices": [
+                {
+                    "devicePath": "<HID::G25 Racing Wheel>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
