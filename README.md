@@ -1,92 +1,105 @@
-# 🚀 Proyecto de Simulación Espacial en Unity
+# 🚀 Space Simulation Project in Unity
 
-## 🎮 Descripción General
+## 🎮 Overview
 
-El proyecto comenzó con la intención de desarrollar un **simulador de parqueo en realidad virtual (VR)** utilizando el **volante Logitech G25 Wheels** como dispositivo principal de control.  
-Durante las primeras etapas, se logró establecer la conexión entre el hardware y el motor gráfico **Unity**, permitiendo que el volante funcionara como un joystick personalizado.  
+The project began with the goal of developing a **virtual reality (VR) parking simulator** using the **Logitech G25 Wheel** as the main control device.  
+During the initial stages, the connection between the hardware and the **Unity** game engine was successfully established, allowing the wheel to function as a customized joystick.  
 
-Sin embargo, debido a limitaciones técnicas de compatibilidad —como el reconocimiento incompleto de las marchas y la falta de respuesta funcional del pedal del embrague—, se decidió replantear el enfoque del proyecto.  
-A partir de este cambio, se **desarrolló y finalizó un videojuego espacial en Unity**, totalmente **jugable en realidad virtual con gafas Oculus Rift** y **controlado mediante el volante Logitech G25**.  
-El resultado fue una experiencia inmersiva y fluida, que aprovecha la infraestructura inicial del simulador y la transforma en un entorno dinámico y atractivo de exploración espacial.
-
----
-
-## 🧩 Desarrollo Inicial
-
-- Se registró el **Logitech G25** como dispositivo de tipo joystick en Unity.  
-- Se construyeron **controles personalizados** para mapear cada acción del volante a funciones dentro del simulador.  
-- Se desarrolló un **script en C#** encargado de capturar las señales del volante y traducirlas en movimientos dentro del entorno 3D.  
-- El script fue vinculado al objeto principal (la nave), permitiendo una **interacción directa entre hardware y software**.
-
-Este paso marcó la base para el sistema de control utilizado en el videojuego espacial final.
+However, due to technical compatibility limitations—such as incomplete gear detection and the lack of a functional clutch pedal—the project was redefined.  
+Following this change, a **fully developed space video game in Unity** was created, **playable in virtual reality with Oculus Rift** and **controlled using the Logitech G25 wheel**.  
+The result is an immersive and smooth experience that builds upon the simulator’s initial foundation and transforms it into a dynamic and engaging space exploration environment.
 
 ---
 
-## ⚙️ Limitaciones Técnicas Encontradas
+## 🧩 Initial Development
 
-Durante la fase inicial se identificaron las siguientes limitaciones:
+- The **Logitech G25** was registered as a joystick-type device in Unity.  
+- **Custom controls** were created to map each wheel action to simulator functions.  
+- A **C# script** was developed to capture the wheel’s signals and translate them into 3D movement within the environment.  
+- The script was linked to the main object (the spaceship), allowing **direct interaction between hardware and software**.
 
-- El G25 **solo reconocía la marcha 1 y 2**, mientras que las demás y la reversa no eran detectadas por Unity.  
-- El **pedal del embrague** se registraba como un botón, pero no enviaba información funcional.  
-- Estos problemas persistieron incluso después de varias pruebas y configuraciones, debido a incompatibilidades entre las librerías de Unity y el hardware del G25.  
-
-Estas restricciones motivaron el cambio hacia un proyecto más creativo y viable técnicamente.
-
----
-
-## 🌌 Videojuego Espacial en VR
-
-El resultado final fue un **videojuego espacial completamente funcional**, jugado en primera persona con **gafas Oculus Rift** y controlado por el **volante Logitech G25**.  
-
-### Características principales:
-- **Terreno espacial y cielo estrellado** con sensación realista de profundidad.  
-- **Nave controlable** con movimientos precisos y sensibilidad ajustada.  
-- **Cámara en primera persona**, simulando la vista desde el interior de la nave.  
-- **Interacción en realidad virtual**, permitiendo una experiencia inmersiva y estable.  
-
-### Dinámicas del juego:
-
-1. **Disparo a objetivos y recuperación de vida:**  
-   El jugador debía **acertar a diferentes objetivos distribuidos en el entorno espacial** mientras **recuperaba vida progresivamente**, buscando alcanzar la **mayor cantidad de puntos posible** antes de que se agotara el tiempo.  
-   Esta mecánica permitió evaluar la precisión de los controles, la respuesta del volante G25 y la estabilidad del sistema VR.
-
-2. **Maniobras de vuelo** suaves y calibradas para evitar mareos en VR.  
-3. **Sistema de control híbrido**, combinando volante y gafas Oculus Rift para una sensación de conducción espacial única.
+This stage established the foundation for the control system later used in the final space game.
 
 ---
 
-## 🔧 Desarrollo Técnico
+## ⚙️ Technical Limitations
 
-Durante el desarrollo se trabajó en:
-- **Calibrar la sensibilidad de la nave** en ascensos, descensos y giros.  
-- **Optimizar los movimientos** para que fueran cómodos y naturales dentro del entorno VR.  
-- **Implementar scripts personalizados** para traducir las señales del G25 a rotaciones y desplazamientos de la nave.  
-- **Integrar las gafas Oculus Rift** al entorno de Unity para permitir la visualización inmersiva en tiempo real.  
-- **Ajustar el rendimiento gráfico y la estabilidad** del entorno espacial.
+During the early stages, the following limitations were identified:
 
----
+- The G25 **only detected gears 1 and 2**, while the remaining gears and reverse were not recognized by Unity.  
+- The **clutch pedal** was detected as a button but didn’t send functional input data.  
+- These issues persisted even after several tests and adjustments, mainly due to incompatibilities between Unity’s input libraries and the G25 hardware.  
 
-## 🎥 Video Demo
-
-> 🎬 **Demo del videojuego en acción:**  
-> [Ver video en GitHub](https://github.com/user-attachments/assets/d6be2f17-cd1a-4ed4-9419-fead64238d14)
+These constraints motivated a shift toward a more creative and technically viable project.
 
 ---
 
-## 📚 Referencias
+## 🌌 Space VR Game
 
-- [Configuración básica de controles personalizados en Unity](https://youtu.be/ST8meQg1-04?si=sG-fkp8jw1L82Yi7)  
-- [Tutorial de detección de input con joystick](https://youtu.be/2N6BFeVzbDY?si=xu5QGM0nr81kJSSM)  
-- [Simulación de vuelo en Unity (control de nave)](https://youtu.be/CLttqDJ9O5M?si=1KPFmNo7-fsHZ_iD)
+The final result was a **fully functional space video game**, played in first-person view with **Oculus Rift** and controlled using the **Logitech G25 wheel**.  
+
+### Main Features:
+- **Space terrain and starfield** with realistic depth perception.  
+- **Controllable spaceship** with fine-tuned sensitivity and precise movements.  
+- **First-person camera**, simulating the pilot’s cockpit view.  
+- **Full VR interaction**, providing a stable and immersive experience.  
+
+### Gameplay Mechanics:
+
+1. **Target shooting and health recovery:**  
+   The player must **hit different targets placed throughout the space environment** while **gradually recovering health**, aiming to **score as many points as possible** before time runs out.  
+   This mechanic tested the wheel’s precision, responsiveness, and the overall stability of the VR system.
+
+2. **Smooth flight maneuvers**, carefully calibrated to prevent motion sickness in VR.  
+3. **Hybrid control system**, combining the Logitech wheel and Oculus Rift headset for a unique spatial driving experience.
 
 ---
 
-## 👨‍💻 Autor
+## 🔧 Technical Development
+
+Throughout development, the following work was done:
+- **Calibrated spaceship sensitivity** in ascending, descending, and rotational movements.  
+- **Optimized motion controls** to ensure comfortable and natural VR gameplay.  
+- **Implemented custom C# scripts** to translate G25 input signals into spaceship motion.  
+- **Integrated Oculus Rift** into Unity for real-time immersive visualization.  
+- **Adjusted performance and graphical stability** within the space environment.
+
+---
+
+## 🎥 Demo Video
+
+> 🎬 **Gameplay demo:**  
+> [Watch on GitHub](https://github.com/user-attachments/assets/d6be2f17-cd1a-4ed4-9419-fead64238d14)
+
+---
+
+## 🧠 Open Lab Presentation
+
+The video game was **officially presented at the Open Lab of Universidad de los Andes**,  
+as part of the final showcase for the **Mixed Reality** course.  
+
+During the event, attendees could **experience the game in real time** using the **Oculus Rift headset** and **Logitech G25 wheel**,  
+testing the spaceship controls and the interactive health-recovery mechanics.  
+
+The presentation received positive feedback for its immersive environment,  
+smooth control responsiveness, and the balance achieved between gameplay challenge and comfort in VR.
+
+---
+
+## 📚 References
+
+- [Basic configuration of custom controls in Unity](https://youtu.be/ST8meQg1-04?si=sG-fkp8jw1L82Yi7)  
+- [Joystick input detection tutorial](https://youtu.be/2N6BFeVzbDY?si=xu5QGM0nr81kJSSM)  
+- [Unity flight simulation (spaceship control)](https://youtu.be/CLttqDJ9O5M?si=1KPFmNo7-fsHZ_iD)
+
+---
+
+## 👨‍💻 Author
 
 **Juan David Ríos Nisperuza**  
 
-Proyecto desarrollado como parte del curso de **Realidad Mixta – Universidad de los Andes**  
+Developed as part of the **Mixed Reality course – Universidad de los Andes**  
 
 Bogotá, Colombia 🇨🇴  
 
-
+---
